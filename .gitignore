@@ -1,0 +1,38 @@
+# Ignore Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# Ignore virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# Ignore example and original input folders
+examples/
+original_files/
+
+# Ignore system or IDE-specific files
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# Ignore temp and test artifacts
+*.tmp
+*.bak
+*.old
+*.pytest_cache/
+.cache/
+
+# Allow key project files
+!enhanced_agent.py
+!enhanced_streamlit_app.py
+!enhanced_requirements.txt
+!INSTALLATION_GUIDE.md
+!README.md
+!simple_odt_test.py
+!test_odt_generation.py

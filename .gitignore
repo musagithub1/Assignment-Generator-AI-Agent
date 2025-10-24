@@ -12,7 +12,6 @@ ENV/
 .venv/
 
 # Ignore example and original input folders
-examples/
 original_files/
 
 # Ignore system or IDE-specific files

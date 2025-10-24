@@ -27,7 +27,7 @@ An intelligent academic writing assistant that analyzes PDF documents and genera
 
 - Python 3.8+
 - OpenRouter API key
-- Required packages (see `enhanced_requirements.txt`)
+- Required packages (see `requirements.txt`)
 
 ## 🛠️ Installation
 
@@ -35,7 +35,7 @@ An intelligent academic writing assistant that analyzes PDF documents and genera
 
 2. **Install dependencies:**
    ```bash
-   pip install -r enhanced_requirements.txt
+   pip install -r requirements.txt
    ```
 
 3. **Set up your OpenRouter API key:**
@@ -144,7 +144,7 @@ This will:
 enhanced-ai-assistant/
 ├── enhanced_agent.py              # Core agent with ODT support
 ├── enhanced_streamlit_app.py      # Enhanced Streamlit interface
-├── enhanced_requirements.txt      # Updated dependencies
+├── requirements.txt      # Updated dependencies
 ├── test_odt_generation.py        # ODT testing script
 ├── README.md                     # This file
 ├── original_files/               # Your original files
@@ -211,7 +211,7 @@ analysis = agent.run_analysis(
 
 2. **Missing dependencies**
    ```bash
-   pip install --upgrade -r enhanced_requirements.txt
+   pip install --upgrade -r requirements.txt
    ```
 
 3. **OpenRouter API issues**
@@ -231,7 +231,7 @@ If you're upgrading from the original version:
 1. **Backup your original files**
 2. **Replace the agent module**: Use `enhanced_agent.py` instead of `agentz.py`
 3. **Update Streamlit app**: Use `enhanced_streamlit_app.py`
-4. **Install new dependencies**: `pip install -r enhanced_requirements.txt`
+4. **Install new dependencies**: `pip install -r requirements.txt`
 5. **Test ODT functionality**: Run `python test_odt_generation.py`
 
 ## 🤝 Contributing

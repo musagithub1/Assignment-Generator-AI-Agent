@@ -1,173 +1,255 @@
-# 🎓 Enhanced AI Academic Assistant
+<div align="center">
 
-An intelligent academic writing assistant that analyzes PDF documents and generates professional assignments in both **PDF** and **ODT** formats.
+# 🎓 AI Academic Assignment Generator
 
-## ✨ New Features
+### *Intelligent Document Analysis & Professional Assignment Creation*
 
-### 📝 ODT Format Support
-- **OpenDocument Text (.odt)** output for maximum compatibility
-- Works with LibreOffice Writer, Microsoft Word, and Google Docs
-- Fully editable documents with professional formatting
-- Maintains proper heading hierarchy and list formatting
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io)
+[![OpenRouter](https://img.shields.io/badge/OpenRouter-API-orange)](https://openrouter.ai)
 
-### 📄 Dual Format Output
-- **PDF**: Perfect for final submission and printing
-- **ODT**: Ideal for further editing and collaboration
+**Transform PDF documents into professionally formatted assignments with AI-powered analysis**
 
-## 🚀 Features
+[🚀 Getting Started](#-quick-start) • [✨ Features](#-features) • [📖 Documentation](#-usage-guide) • [🤝 Connect](#-connect-with-me)
 
-- **Document Analysis**: Intelligent analysis of uploaded PDF documents
-- **Content Extraction**: Extracts key topics, instructions, and identifies ambiguities
-- **Professional Formatting**: Clean, academic-style document generation
-- **Customizable Cover Pages**: Include student details, instructor info, and university logos
-- **Multiple Export Formats**: Generate both PDF and ODT versions
-- **Interactive Web Interface**: User-friendly Streamlit application
+---
 
-## 📋 Requirements
+</div>
 
-- Python 3.8+
-- OpenRouter API key
-- Required packages (see `requirements.txt`)
+## 🌟 Overview
 
-## 🛠️ Installation
+The **AI Academic Assignment Generator** is a powerful tool that combines document analysis with professional formatting to help students and academics create high-quality assignments. Upload your PDF materials, and let AI handle the analysis and formatting while you focus on the content.
 
-1. **Clone or download the project files**
+### 🎯 What Makes This Special?
 
-2. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
+- 🧠 **Intelligent Analysis** - Deep understanding of academic documents
+- 📄 **Dual Format Export** - Generate both PDF and ODT files
+- 🎨 **Professional Formatting** - Academic-standard layouts and styling
+- ⚡ **Fast & Efficient** - Powered by OpenRouter's advanced AI models
+- 🆓 **Open Source** - Free to use and modify
 
-3. **Set up your OpenRouter API key:**
-   ```bash
-   export OPENROUTER_API_KEY="your-api-key-here"
-   ```
-   
-   Or create a `.env` file:
-   ```
-   OPENROUTER_API_KEY=your-api-key-here
-   ```
+---
+
+## ✨ Features
+
+<table>
+<tr>
+<td width="50%">
+
+### 📚 Document Processing
+- ✅ PDF text extraction
+- ✅ Intelligent content analysis
+- ✅ Key topic identification
+- ✅ Ambiguity detection
+- ✅ Instruction extraction
+
+</td>
+<td width="50%">
+
+### 📝 Assignment Generation
+- ✅ Professional cover pages
+- ✅ Customizable student details
+- ✅ Academic formatting
+- ✅ Proper heading hierarchy
+- ✅ Citation-ready structure
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 📤 Export Formats
+- 📄 **PDF** - Perfect for submission
+- 📝 **ODT** - Ideal for editing
+- 🖼️ Logo support (PDF)
+- 📐 Custom page layouts
+- 🎨 Professional styling
+
+</td>
+<td width="50%">
+
+### 💻 User Interface
+- 🌐 Interactive web app
+- 📱 Responsive design
+- 🔄 Real-time processing
+- 💾 Instant downloads
+- 🎯 Intuitive workflow
+
+</td>
+</tr>
+</table>
+
+---
+
+## 📊 Format Comparison
+
+| Feature | PDF Format | ODT Format |
+|:--------|:----------:|:----------:|
+| **Fixed Layout** | ✅ | ❌ |
+| **Fully Editable** | ⚠️ Limited | ✅ |
+| **Print Quality** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| **Collaboration** | ⚠️ Limited | ✅ |
+| **Logo Support** | ✅ | 🔜 Coming Soon |
+| **File Size** | Larger | Smaller |
+| **Universal Compatibility** | ✅ | ⚠️ Word Processors |
+| **Best For** | Submission | Editing & Review |
+
+---
 
 ## 🚀 Quick Start
 
-### Using the Streamlit Application
+### Prerequisites
 
+```bash
+Python 3.8 or higher
+OpenRouter API key (free tier available)
+```
+
+### Installation
+
+1️⃣ **Clone the repository**
+```bash
+git clone https://github.com/musagithub1/Assignment-Generator-AI-Agent.git
+cd Assignment-Generator-AI-Agent
+```
+
+2️⃣ **Install dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+3️⃣ **Configure API key**
+
+Create a `.env` file in the project root:
+```env
+OPENROUTER_API_KEY=your-api-key-here
+```
+
+Or set it as an environment variable:
+```bash
+export OPENROUTER_API_KEY="your-api-key-here"
+```
+
+4️⃣ **Launch the application**
 ```bash
 streamlit run enhanced_streamlit_app.py
 ```
 
-Then:
-1. 📤 Upload your PDF document
-2. 📝 Add assignment instructions (optional)
-3. 🔍 Review the document analysis
-4. ✏️ Provide clarifications if needed
-5. 📄 Generate your assignment
-6. 💾 Download in PDF or ODT format
+🎉 **That's it!** The app will open in your browser at `http://localhost:8501`
 
-### Using the API Directly
+---
+
+## 📖 Usage Guide
+
+### Using the Web Interface
+
+<div align="center">
+
+```mermaid
+graph LR
+    A[📤 Upload PDF] --> B[📝 Add Instructions]
+    B --> C[🔍 AI Analysis]
+    C --> D[✏️ Review & Clarify]
+    D --> E[🎯 Generate Assignment]
+    E --> F[💾 Download PDF/ODT]
+    
+    style A fill:#e3f2fd
+    style C fill:#fff3e0
+    style E fill:#e8f5e9
+    style F fill:#f3e5f5
+```
+
+</div>
+
+**Step-by-step process:**
+
+1. 📤 **Upload** your PDF document
+2. 📝 **Enter** assignment instructions (optional)
+3. 🔍 **Review** AI-generated analysis
+4. ✏️ **Provide** clarifications if needed
+5. 🎯 **Generate** your assignment
+6. 💾 **Download** in your preferred format (PDF or ODT)
+
+### Using the Python API
 
 ```python
 import enhanced_agent as agent
 
-# Extract text from PDF
+# Step 1: Extract text from PDF
 with open('document.pdf', 'rb') as f:
     pdf_data = f.read()
 pdf_text = agent.extract_pdf_text(pdf_data)
 
-# Run analysis
+# Step 2: Run AI analysis
 analysis = agent.run_analysis(pdf_text, "Your assignment instructions")
 print(analysis)
 
-# Generate assignment
-assignment = agent.run_assignment(pdf_text, "Your instructions", "Clarifications")
+# Step 3: Generate assignment
+assignment = agent.run_assignment(
+    pdf_text, 
+    "Your instructions", 
+    "Optional clarifications"
+)
 
-# Create ODT file
+# Step 4: Create ODT file
 odt_data = agent.create_assignment_odt(
     name="John Doe",
-    registration_number="12345",
-    instructor_name="Dr. Smith",
+    registration_number="STD-12345",
+    instructor_name="Dr. Jane Smith",
     semester="Fall 2024",
     university_name="University of Technology",
     assignment_text=assignment,
-    title="My Assignment"
+    title="Academic Assignment"
 )
 
-# Save ODT file
+# Save the file
 with open('assignment.odt', 'wb') as f:
     f.write(odt_data)
-
-# Create PDF file (existing functionality)
-pdf_data = agent.create_assignment_pdf(
-    name="John Doe",
-    registration_number="12345",
-    instructor_name="Dr. Smith",
-    semester="Fall 2024",
-    university_name="University of Technology",
-    assignment_text=assignment,
-    title="My Assignment"
-)
-
-# Save PDF file
-with open('assignment.pdf', 'wb') as f:
-    f.write(pdf_data)
 ```
 
-## 🧪 Testing
+---
 
-Test the ODT generation functionality:
-
-```bash
-python test_odt_generation.py
-```
-
-This will:
-- Generate sample ODT files
-- Test various formatting elements
-- Verify file creation and content
-- Provide validation results
-
-## 📊 Format Comparison
-
-| Feature | PDF | ODT |
-|---------|-----|-----|
-| **Fixed Layout** | ✅ Yes | ❌ No |
-| **Editable** | ❌ Limited | ✅ Full |
-| **Print Quality** | ✅ Excellent | ✅ Good |
-| **Collaboration** | ❌ Limited | ✅ Excellent |
-| **Logo Support** | ✅ Yes | ❌ Not yet |
-| **File Size** | 📊 Larger | 📊 Smaller |
-| **Compatibility** | 🌐 Universal | 🌐 Word Processors |
-
-## 📁 Project Structure
+## 🏗️ Project Structure
 
 ```
-enhanced-ai-assistant/
-├── enhanced_agent.py              # Core agent with ODT support
-├── enhanced_streamlit_app.py      # Enhanced Streamlit interface
-├── requirements.txt      # Updated dependencies
-├── test_odt_generation.py        # ODT testing script
-├── README.md                     # This file
-├── original_files/               # Your original files
+Assignment-Generator-AI-Agent/
+│
+├── 📄 enhanced_agent.py              # Core AI agent with ODT support
+├── 🌐 enhanced_streamlit_app.py      # Web interface
+├── 📋 requirements.txt               # Python dependencies
+├── 🧪 test_odt_generation.py         # Testing script
+├── 📖 README.md                      # This file
+│
+├── 📁 original_files/                # Original implementation
 │   ├── agentz.py
 │   ├── streamlit_app.py
 │   ├── assignment_template.html
-│   ├── requirements.txt
-│   └── other_files...
-└── examples/                     # Sample generated files
+│   └── requirements.txt
+│
+└── 📁 examples/                      # Sample outputs
     ├── sample_assignment.odt
     └── sample_assignment.pdf
 ```
 
-## 🔧 Configuration
+---
 
-### OpenRouter Models
+## ⚙️ Configuration
 
-The system uses OpenRouter API with these default settings:
-- **Model**: `z-ai/glm-4.5-air:free` (can be changed)
-- **Temperature**: 0.0 (deterministic output)
+### AI Models
 
-You can modify the model in the function calls:
+The system uses **OpenRouter API** with flexible model selection:
 
+**Default Model:** `z-ai/glm-4.5-air:free` (free tier)
+
+**Supported Models:**
+- `openai/gpt-3.5-turbo`
+- `openai/gpt-4`
+- `anthropic/claude-3-sonnet`
+- `anthropic/claude-3-opus`
+- And 100+ more on OpenRouter
+
+**Custom Model Configuration:**
 ```python
 analysis = agent.run_analysis(
     pdf_text, 
@@ -177,94 +259,186 @@ analysis = agent.run_analysis(
 )
 ```
 
-### Supported Models
-- `z-ai/glm-4.5-air:free` (default, free tier)
-- `openai/gpt-3.5-turbo`
-- `openai/gpt-4`
-- `anthropic/claude-3-sonnet`
-- And many more on OpenRouter
+### Formatting Options
 
-## 🎨 Formatting Features
+#### ODT Format Features
+- 📝 Heading styles (H1, H2, H3)
+- 📄 Justified paragraphs
+- 📋 Bulleted and numbered lists
+- 🎓 Professional cover page
+- 🔤 Times New Roman font (academic standard)
 
-### ODT Format Support
-- **Headings**: H1, H2, H3 with proper styling
-- **Paragraphs**: Justified text with appropriate spacing
-- **Lists**: Both bulleted and numbered lists
-- **Cover Page**: Professional layout with student information
-- **Styles**: Academic formatting with Times New Roman font
-
-### PDF Format Support (Existing)
-- Professional cover page with optional logo
-- Proper margins and spacing
-- Page numbers
-- Academic formatting
-- Fixed layout for consistent appearance
-
-## 🐛 Troubleshooting
-
-### Common Issues
-
-1. **ODT files won't open**
-   - Ensure the file has `.odt` extension
-   - Try opening with LibreOffice Writer first
-   - Check file size (should be > 1KB)
-
-2. **Missing dependencies**
-   ```bash
-   pip install --upgrade -r requirements.txt
-   ```
-
-3. **OpenRouter API issues**
-   - Verify your API key is set correctly
-   - Check your OpenRouter account quota
-   - Try a different model
-
-4. **Formatting issues in ODT**
-   - ODT formatting may vary between applications
-   - LibreOffice Writer provides the best compatibility
-   - Consider converting to DOCX if needed
-
-## 🔄 Migration from Original
-
-If you're upgrading from the original version:
-
-1. **Backup your original files**
-2. **Replace the agent module**: Use `enhanced_agent.py` instead of `agentz.py`
-3. **Update Streamlit app**: Use `enhanced_streamlit_app.py`
-4. **Install new dependencies**: `pip install -r requirements.txt`
-5. **Test ODT functionality**: Run `python test_odt_generation.py`
-
-## 🤝 Contributing
-
-To add more features:
-
-1. **Add new export formats** in `enhanced_agent.py`
-2. **Enhance UI** in `enhanced_streamlit_app.py`
-3. **Add tests** in `test_odt_generation.py`
-4. **Update documentation** in this README
-
-## 📄 License
-
-This enhanced version maintains compatibility with your original code while adding ODT functionality. Feel free to modify and distribute according to your needs.
-
-## 🙋 Support
-
-For issues or questions:
-1. Check the troubleshooting section above
-2. Run the test script to verify functionality
-3. Check the generated files to ensure quality
-4. Review the console output for error messages
-
-## 🎯 Future Enhancements
-
-Planned features:
-- **DOCX format support**
-- **Logo support in ODT files**
-- **Advanced styling options**
-- **Template customization**
-- **Batch processing**
-- **Cloud storage integration**
+#### PDF Format Features
+- 🖼️ Custom logo support
+- 📏 Proper margins and spacing
+- 🔢 Automatic page numbers
+- 🎨 Fixed layout formatting
+- 📐 Print-ready quality
 
 ---
 
-**🎉 Enjoy your enhanced AI Academic Assistant with dual-format support!**
+## 🧪 Testing
+
+Verify ODT generation functionality:
+
+```bash
+python test_odt_generation.py
+```
+
+**Test coverage includes:**
+- ✅ ODT file creation
+- ✅ Formatting validation
+- ✅ Content verification
+- ✅ Compatibility testing
+
+---
+
+## 🔧 Troubleshooting
+
+<details>
+<summary><b>🚨 Common Issues & Solutions</b></summary>
+
+### ODT Files Won't Open
+```
+✅ Solution:
+1. Ensure .odt extension is present
+2. Open with LibreOffice Writer first
+3. Check file size (should be > 1KB)
+4. Try re-generating the file
+```
+
+### Missing Dependencies
+```bash
+pip install --upgrade -r requirements.txt
+```
+
+### API Connection Issues
+```
+✅ Check:
+1. API key is correctly set in .env file
+2. OpenRouter account has available credits
+3. Internet connection is stable
+4. Try a different model if current one fails
+```
+
+### Formatting Problems
+```
+✅ Tips:
+1. Use LibreOffice Writer for best ODT compatibility
+2. Update to latest version of your word processor
+3. Convert to DOCX if needed for Microsoft Word
+```
+
+</details>
+
+---
+
+## 🔄 Migration Guide
+
+Upgrading from the original version? Follow these steps:
+
+```bash
+# 1. Backup your files
+cp agentz.py agentz.py.backup
+cp streamlit_app.py streamlit_app.py.backup
+
+# 2. Update to enhanced version
+# Use enhanced_agent.py and enhanced_streamlit_app.py
+
+# 3. Install new dependencies
+pip install -r requirements.txt
+
+# 4. Test functionality
+python test_odt_generation.py
+
+# 5. Run the enhanced app
+streamlit run enhanced_streamlit_app.py
+```
+
+---
+
+## 🎯 Roadmap
+
+### 🔜 Coming Soon
+- [ ] 📄 DOCX format support
+- [ ] 🖼️ Logo support in ODT files
+- [ ] 🎨 Custom styling templates
+- [ ] 📦 Batch processing
+- [ ] ☁️ Cloud storage integration
+- [ ] 🌍 Multi-language support
+
+### 💡 Future Enhancements
+- [ ] 🤖 Advanced AI models integration
+- [ ] 📊 Citation management
+- [ ] 🔗 Reference linking
+- [ ] 📱 Mobile app version
+- [ ] 🎓 Subject-specific templates
+
+---
+
+## 🤝 Connect With Me
+
+<div align="center">
+
+### 👨‍💻 Mussa Khan
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mussakhan-ai/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/musagithub1)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mussakhan.ai@gmail.com)
+
+**🌟 AI Engineer | Machine Learning Enthusiast | Open Source Contributor**
+
+</div>
+
+---
+
+## 📄 License & Usage
+
+<div align="center">
+
+### 🆓 Open Source & Free to Use
+
+**This version is open source and free to use.**
+
+For the latest or enhanced version, contact me directly.
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+
+</div>
+
+---
+
+## 🙏 Acknowledgments
+
+- 🤖 Powered by [OpenRouter API](https://openrouter.ai)
+- 🚀 Built with [Streamlit](https://streamlit.io)
+- 📄 PDF processing with PyPDF2
+- 📝 ODT generation with odfpy
+
+---
+
+## 📞 Support
+
+Need help or have questions?
+
+1. 📚 Check the [Usage Guide](#-usage-guide)
+2. 🔍 Review [Troubleshooting](#-troubleshooting)
+3. 🧪 Run the test script
+4. 💬 [Open an issue](https://github.com/musagithub1/Assignment-Generator-AI-Agent/issues)
+5. 📧 Contact me on [LinkedIn](https://www.linkedin.com/in/mussakhan-ai/)
+
+---
+
+<div align="center">
+
+### ⭐ If you find this project helpful, please give it a star!
+
+**Made with ❤️ by [Mussa Khan](https://www.linkedin.com/in/mussakhan-ai/)**
+
+*Empowering students and academics with AI-powered tools*
+
+---
+
+**🎉 Happy Assignment Writing! 🎉**
+
+</div>
